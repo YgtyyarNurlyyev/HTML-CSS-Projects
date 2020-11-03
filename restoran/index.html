@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style/style.css">
+	<script src="https://kit.fontawesome.com/ee84571d0a.js" crossorigin="anonymous"></script>
+	<title>Restoran</title>
+</head>
+
+<body>
+	<div class="grid">
+		<nav class="menu">
+			<button onclick="myFunction()" class="hidden-menu">
+				<span class="open" id="open"><i class="fas fa-bars"></i></span>
+				<span class="close" id="close"><i class="fas fa-times"></i></span>
+				Menu
+			</button>
+
+
+			<div class="menulist" id="menulist">
+				<div><a href="#">TACOS</a></div>
+				<div><a href="#">BEERS</a></div>
+				<div><a href="#">WINES</a></div>
+				<div><a href="#">DESERTS</a></div>
+				<div><a href="#">RESERVATIONS</a></div>
+			</div>
+		</nav>
+
+		<div class="baha">
+			<div class="bas">
+				<h1>Terry's Taco Joint</h1>
+				<p>Pretty Good Taccos!</p>
+			</div>
+			<div class="baha1">
+				<p class="price">$1.99</p>
+				<p class="down">Tacos</p>
+			</div>
+			<div class="baha2">
+				<p class="price">$3.99</p>
+				<p class="down">Kombucha</p>
+			</div>
+		</div>
+
+		<div class="menulist2">
+			<div><img src="img/taco.svg" width="50px">
+				<p class="name">Tacos</p>
+				<p class="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+			</div>
+			<div><img src="img/beer.svg" width="50px">
+				<p class="name">Beer</p>
+				<p class="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+			</div>
+			<div><img src="img/wine.svg" width="50px">
+				<p class="name">Wine</p>
+				<p class="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+			</div>
+			<div><img src="img/pizza-slice.svg" width="50px">
+				<p class="name">Pizza</p>
+				<p class="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+			</div>
+		</div>
+
+		<div class="center">
+			<img src="img/tacos.png" class="tacos" width="200px">
+			<div class="centerhat">
+				<h1>Featured Taco</h1>
+				<p>Slim Profile, easy to hold and loaded with cheese.</p>
+				<p>This is the one you have been waiting for</p>
+				<button>Learn More →</button>
+			</div>
+		</div>
+
+		<div class="suratlar">
+			<h3>INSTANT GRAMS</h3>
+			<img src="img/1.jpg"><img src="img/2.jpg">
+			<img src="img/3.jpg"><img src="img/4.jpg">
+			<img src="img/5.jpg"><img src="img/6.jpg">
+			<img src="img/7.jpg"><img src="img/8.jpg">
+			<img src="img/9.jpg"><img src="img/10.jpg">
+
+		</div>
+
+
+	</div>
+
+	<script>
+		function myFunction() {
+			var z = document.getElementById("menulist");
+			if (z.style.display === "none") {
+				z.style.display = "grid";
+			} else {
+				z.style.display = "none";
+			}
+
+			var x = document.getElementById("open");
+			var y = document.getElementById("close");
+			if (y.style.display === "none") {
+				x.style.display = "none";
+				y.style.display = "inline";
+			} else {
+				y.style.display = "none";
+				x.style.display = "inline";
+			}
+		}	
+	</script>
+</body>
+
+</html>

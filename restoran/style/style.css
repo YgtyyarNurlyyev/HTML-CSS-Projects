@@ -1,0 +1,210 @@
+body{
+	background: linear-gradient(to right,#f93d66,#6d47d9);
+	font-size: 16px; 
+	background-size: cover; 
+	background-repeat: no-repeat;
+	margin: 50px;
+}
+
+button {
+    background: #ffc600;
+}
+
+.hidden-menu{
+	background-color: #ffc600;
+	padding: 15px 20px 15px 20px;
+	margin-bottom: 10px;
+	width: 100px;
+	display: none;
+}
+
+.open {
+	
+}
+.close {
+	display: none;
+}
+
+.menulist{
+	display: grid;
+	grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+	grid-gap: 10px;
+}
+
+.menulist3{
+	display: grid;
+	grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
+	grid-gap: 10px;
+}
+
+.menulist div{
+    text-align: center;
+    background-color: #ffc600;
+    padding: 10px 40px 10px 40px; 
+    
+}
+
+.menulist div a{
+	text-decoration: none;
+	color: black;
+	font-size: 20px;
+	font-weight: bold;
+	font-family: sans-serif;
+}
+
+.baha{
+	margin-top: 20px;
+	display: grid;
+	grid-gap:25px;
+    grid-template-areas: 
+    "bas bas baha1"
+    "bas bas baha2"
+}
+
+.bas{
+	grid-area: bas;
+	background-image: url(../img/Burger.jpg);
+	background-size: cover;
+	height: 500px;
+}
+
+.baha1{
+	grid-area: baha1;
+	background-color: #ffc600;
+	text-align: center;
+}
+
+.down{
+	margin-top: 0;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+
+.price{
+	text-align: center;
+	font-size: 60px;
+	margin-bottom: 0;
+}
+
+.baha2{
+	grid-area: baha2;
+	background-color: #ffc600;
+	text-align: center;
+}
+
+.bas h1{
+	background-color: #ffc600;
+	width: 250px;
+	margin-left: 60px;
+	margin-top: 200px;
+}
+
+.bas p{
+	background-color: #ffc600;
+	width: 135px;
+	margin-left: 60px;
+}
+
+.lorem{
+	
+}
+
+.menulist2{
+	margin-top: 25px;
+	display: grid;
+	grid-template-columns: repeat(auto-fit,minmax(215px,1fr));
+	grid-gap: 10px;
+}
+
+.menulist2 div{
+    text-align: center;
+    background-color: white;
+    padding: 10px 40px 10px 40px;     
+}
+
+.menulist2 div img{
+    text-align: center;     
+}
+
+.name{
+	text-align: center;
+	font-weight: bold;
+	font-size: 18px;
+	margin-top: 0;
+}
+
+
+.center {
+	margin-top: 15px;
+    background: white;
+    padding: 50px;
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    align-items: center;
+}
+
+.suratlar{
+	margin-top: 15px;
+	display: grid;
+	grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.suratlar h3 {
+	grid-column: 1 / -1;
+    display: grid;
+    grid-gap: 20px;
+    text-align: center;
+}
+
+.suratlar img{
+	width: 100%;
+}
+
+@media (max-width: 1000px){
+
+.hidden-menu {
+	display: block;
+}
+
+.menulist {
+	display: none;
+}
+
+}
+
+@media (max-width: 700px){
+.baha {
+    grid-template-areas:
+        "bas bas"
+        "baha1 baha2";
+}
+
+.center{
+	grid-template-columns: 1fr;
+}
+
+}
+
+@media (max-width: 500px){
+.baha {
+    grid-template-areas:
+        "bas"
+        "baha1"
+        "baha2";
+}
+
+.bas h1{
+	width: 150px;
+}
+
+}
+
+@media (max-width: 250px){
+
+.bas h1{
+	width: 80px;
+}
+
+}
