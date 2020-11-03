@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Piano</title>
+</head>
+
+<body>
+    <div class="piano">
+        <button class="white C" onclick="playC()"></button>
+        <button class="black Db" onclick="playDb()"></button>
+        <button class="white D" onclick="playD()"></button>
+        <button class="black Eb" onclick="playEb()"></button>
+        <button class="white E" onclick="playE()"></button>
+        <button class="white F" onclick="playF()"></button>
+        <button class="black Gb" onclick="playGb()"></button>
+        <button class="white G" onclick="playG()"></button>
+        <button class="black Ab" onclick="playAb()"></button>
+        <button class="white A" onclick="playA()"></button>
+        <button class="black Bb" onclick="playBb()"></button>
+        <button class="white B" onclick="playB()"></button>
+    </div>
+
+    <audio id="c">
+        <source src="sounds/c4.mp3" type="audio/mp3">
+    </audio>
+    <audio id="db">
+        <source src="sounds/d-4.mp3" type="audio/mp3">
+    </audio>
+    <audio id="d">
+        <source src="sounds/d4.mp3" type="audio/mp3">
+    </audio>
+    <audio id="eb">
+        <source src="sounds/e3.mp3" type="audio/mp3">
+    </audio>
+    <audio id="e">
+        <source src="sounds/e4.mp3" type="audio/mp3">
+    </audio>
+    <audio id="f">
+        <source src="sounds/f-4.mp3" type="audio/mp3">
+    </audio>
+    <audio id="gb">
+        <source src="sounds/g-4.mp3" type="audio/mp3">
+    </audio>
+    <audio id="g">
+        <source src="sounds/g4.mp3" type="audio/mp3">
+    </audio>
+    <audio id="ab">
+        <source src="sounds/a-4.mp3" type="audio/mp3">
+    </audio>
+    <audio id="a">
+        <source src="sounds/a4.mp3" type="audio/mp3">
+    </audio>
+    <audio id="bb">
+        <source src="sounds/b3.mp3" type="audio/mp3">
+    </audio>
+    <audio id="b">
+        <source src="sounds/b4.mp3" type="audio/mp3">
+    </audio>
+
+    <script src="script/main.js"></script>
+</body>
+
+</html>

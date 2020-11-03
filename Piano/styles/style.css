@@ -1,0 +1,58 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: steelblue;
+    background-size: cover; 
+ }
+ 
+.piano{
+     display: flex;
+     position: relative;
+     margin-left: 5px;
+ }
+
+.white{
+     width: 100px;
+     height: 250px;
+     background-color: white;
+     border: 1px solid black;
+     border-radius: 3px;
+ }
+
+.white:active{
+     background-color: #C0C0C0;
+ }
+
+.black{
+     position: absolute;
+     width: 75px;
+     height: 130px;
+     background-color: black;
+     border: 2px solid black;
+     border-radius: 0px 0px 10px 10px;   
+ }
+
+.black:active{
+     background-color: dimgray;
+ }
+
+.Db{
+     margin-left: 65px;
+ }
+
+.Eb{
+     margin-left: 163px;
+ }
+
+.Gb{
+    margin-left: 363px;
+}
+
+.Ab{
+    margin-left: 463px;
+}
+
+.Bb{
+    margin-left: 560px;
+}
