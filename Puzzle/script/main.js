@@ -86,6 +86,7 @@ function pickimage1() {
     img3.style.boxShadow = "none";
     img1.style.border = "10px solid white";
     img1.style.boxShadow = "5px 5px 5px 5px grey";
+    img1.style.boxSizing = "border-box";
     cbutton.style.display = "inline-block";
     imgindex = 1;
 }
@@ -97,6 +98,7 @@ function pickimage2() {
     img3.style.border = "none"; 
     img2.style.border = "10px solid white";
     img2.style.boxShadow = "5px 5px 5px 5px grey";
+    img2.style.boxSizing = "border-box";
     cbutton.style.display = "inline-block";
     imgindex = 2;
 }
@@ -108,6 +110,7 @@ function pickimage3() {
     img2.style.border = "none";  
     img3.style.border = "10px solid white";
     img3.style.boxShadow = "5px 5px 5px 5px grey";
+    img3.style.boxSizing = "border-box";
     cbutton.style.display = "inline-block";
     imgindex = 3;
 }
@@ -204,7 +207,7 @@ if (memoryrandom != sufflerandom) {
   
   gameState.forEach((row, rowIndex) => {
     row.forEach((column, columnIndex) => {
-      if (column.innerText === '') {
+      if (column.innerText === '.') {
         emptyX = rowIndex;
         emptyY = columnIndex;
       }
@@ -235,9 +238,10 @@ let solvenow = document.getElementById("selp2");
 solvenow.style.display = "block";
 
 
-gameBoard.addEventListener('click', (event) => {
-  const target = event.target;
+gameBoard.addEventListener('click', vv) ;
 
+function vv(event) {
+  const target = event.target;
   gameState.forEach((row, rowIndex) => {
     row.forEach((column, columnIndex) => {
       if (column === target) {
@@ -251,7 +255,7 @@ gameBoard.addEventListener('click', (event) => {
 
   gameState.forEach((row, rowIndex) => {
     row.forEach((column, columnIndex) => {
-      if (column.innerText === '') {
+      if (column.innerText === '.') {
         emptyX = rowIndex;
         emptyY = columnIndex;
       }
@@ -307,10 +311,14 @@ redborder();
       playbutton.style.display = "inline-block";
       selectp.style.display = "block";
       solvenow.style.display = "none";
-
+      gameBoard.removeEventListener('click',vv);
+      restartp.style.transform = "translateY(370px)";
+      cp.style.transform = "translateY(370px)";
     }
   });
 
-});
+}
+
+;
 
 } );
